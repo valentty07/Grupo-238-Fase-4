@@ -1,7 +1,6 @@
 """
 MÓDULO DE EXCEPCIONES PERSONALIZADAS
-Estudiante 1 - Sistema de Gestión Software FJ
-Fase 4 - Manejo de excepciones
+Sistema de Gestión Software FJ - Fase 4
 """
 
 class SoftwareFJException(Exception):
@@ -12,7 +11,7 @@ class SoftwareFJException(Exception):
 
 
 class ClienteException(SoftwareFJException):
-    """Excepción base para errores relacionados con clientes"""
+    """Excepción base para errores de clientes"""
     pass
 
 
@@ -24,7 +23,7 @@ class ClienteNoEncontradoException(ClienteException):
 
 
 class ClienteYaExisteException(ClienteException):
-    """Se lanza cuando ya existe un cliente con mismo ID o email"""
+    """Se lanza cuando ya existe un cliente"""
     def __init__(self, campo, valor):
         self.campo = campo
         self.valor = valor
@@ -37,3 +36,30 @@ class DatosClienteInvalidosException(ClienteException):
         self.campo = campo
         self.razon = razon
         super().__init__(f"Dato inválido en '{campo}': {razon}")
+
+
+class ParametrosInvalidosException(SoftwareFJException):
+    """Se lanza cuando hay parámetros inválidos"""
+    def __init__(self, parametro, razon):
+        self.parametro = parametro
+        self.razon = razon
+        super().__init__(f"Parámetro inválido '{parametro}': {razon}")
+
+
+class ReservaException(SoftwareFJException):
+    """Excepción base para errores de reservas"""
+    pass
+
+
+class ReservaInvalidaException(ReservaException):
+    """Se lanza cuando una reserva no es válida"""
+    def __init__(self, razon):
+        self.razon = razon
+        super().__init__(f"Reserva inválida: {razon}")
+
+
+class CancelacionNoPermitidaException(ReservaException):
+    """Se lanza cuando no se puede cancelar una reserva"""
+    def __init__(self, estado_actual):
+        self.estado_actual = estado_actual
+        super().__init__(f"No se puede cancelar la reserva. Estado actual: {estado_actual}")

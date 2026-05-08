@@ -1,0 +1,21 @@
+2026-05-08 10:46:09,977 - INFO - Operación: Cliente | Resultado: ÉXITO | Detalles: Ana López
+2026-05-08 10:46:09,977 - ERROR - Cliente inválido - Error: Dato inválido en 'nombre': El nombre debe tener al menos 3 caracteres
+2026-05-08 10:46:09,977 - INFO - Operación: Servicio | Resultado: ÉXITO | Detalles: ReservaSalas
+2026-05-08 10:46:09,978 - INFO - Operación: Servicio | Resultado: ÉXITO | Detalles: AlquilerEquipos
+2026-05-08 10:46:09,978 - INFO - Operación: Servicio | Resultado: ÉXITO | Detalles: Asesoria
+2026-05-08 10:55:56,605 - INFO - Operación: Cliente | Resultado: ÉXITO | Detalles: Ana López
+2026-05-08 10:55:56,606 - ERROR - Cliente inválido - Error: Dato inválido en 'nombre': El nombre debe tener al menos 3 caracteres
+2026-05-08 10:55:56,606 - INFO - Operación: Servicio | Resultado: ÉXITO | Detalles: ReservaSalas
+2026-05-08 10:55:56,606 - INFO - Operación: Servicio | Resultado: ÉXITO | Detalles: AlquilerEquipos
+2026-05-08 10:55:56,607 - INFO - Operación: Servicio | Resultado: ÉXITO | Detalles: Asesoria
+2026-05-08 10:55:56,607 - ERROR - Crear reserva - Error: ReservaSalas.calcular_costo() missing 1 required positional argument: 'horas'
+2026-05-08 10:55:56,607 - ERROR - Confirmar reserva - Error: name 'reserva' is not defined
+2026-05-08 11:05:15,792 - INFO - Operación: Cliente | Resultado: ÉXITO | Detalles: Ana López
+2026-05-08 11:05:15,793 - ERROR - Cliente inválido - Error: Dato inválido en 'nombre': El nombre debe tener al menos 3 caracteres
+2026-05-08 11:05:15,793 - INFO - Operación: Servicio | Resultado: ÉXITO | Detalles: ReservaSalas
+2026-05-08 11:05:15,793 - INFO - Operación: Servicio | Resultado: ÉXITO | Detalles: AlquilerEquipos
+2026-05-08 11:05:15,794 - INFO - Operación: Servicio | Resultado: ÉXITO | Detalles: Asesoria
+2026-05-08 11:05:15,794 - INFO - Operación: Reserva | Resultado: ÉXITO | Detalles: Reserva_001
+2026-05-08 11:05:15,794 - INFO - Operación: Confirmar reserva | Resultado: ÉXITO | Detalles: Reserva_001
+2026-05-08 11:05:15,794 - INFO - Operación: Sobrecarga costo | Resultado: ÉXITO | Detalles: Descuento 10% + Impuesto 19%
+2026-05-08 11:05:15,794 - INFO - Operación: Cancelar reserva | Resultado: ÉXITO | Detalles: Reserva_001
